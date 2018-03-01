@@ -6,6 +6,7 @@ class Node
 {
 
     public:
+<<<<<<< HEAD
     Node();
     ~Node();
     void createBranch(std::vector< std::pair<region, Node*> > &leaves, region currentRegion);
@@ -25,6 +26,26 @@ class Node
     short axis;
     //Node* left;
     //Node* right;
+=======
+	    Node();
+	    ~Node();
+	    void createBranch(std::vector< std::pair<region, Node*> > &leaves, region currentRegion);
+	    void fillNode();
+
+
+	    ibex::Interval getItv();
+	    void setItv(ibex::Interval interval);
+	    Node* getLeft();
+	    Node* getRight();
+	    short getAxis();
+
+    
+    private:
+	    ibex::Interval itv;
+	    short axis;
+	    Node* left;
+	    Node* right;
+>>>>>>> upstream/master
 };
 
 std::pair<region, region> bissect(region rgn, int axis);

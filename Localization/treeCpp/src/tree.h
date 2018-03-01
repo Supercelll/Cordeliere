@@ -11,7 +11,11 @@ class Tree
     Tree();
     ~Tree();
     void fill(std::vector<int> dims, std::vector<float> data);
+<<<<<<< HEAD
     void DFS(Node* head);
+=======
+    //void DFS(Node* head);
+>>>>>>> upstream/master
     
     private:
     //Node root;
